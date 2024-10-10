@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, ExternalLink, Menu, Router } from "lucide-react";
+import { Github, ExternalLink, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
@@ -131,6 +131,7 @@ export default function Home() {
       }
     } catch (error) {
       alert("Something went wrong. Please try again.");
+      console.log(error);
     } finally {
       setLoading(false); // Disable loading state after completion
     }
@@ -369,7 +370,7 @@ export default function Home() {
                   <p className="mb-4">November 2023 - Present</p>
                   <ul className="list-disc list-inside">
                     <li>
-                      Organized KnowHow'24, focusing on students' professional
+                      Organized KnowHow&apos;24, focusing on students&apos; professional
                       and communicational abilities.
                     </li>
                     <li>
@@ -393,7 +394,7 @@ export default function Home() {
               <Card className="max-w-2xl text-center mx-auto">
                 <CardContent className="mt-6">
                   <ul className="list-disc list-inside">
-                    <li>Organized Knowhow'24 and Managed 600+ students</li>
+                    <li>Organized Knowhow&apos;24 and Managed 600+ students</li>
                     <li>2 Star and 1400+ rating in codechef</li>
                     <li>96 percentile in Jee Mains 2021</li>
                     <li>Odoo Combat Hackathon Finalist</li>
@@ -433,9 +434,11 @@ export default function Home() {
                 >
                   <Card className="overflow-hidden h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
-                      <img
+                      <Image
                         src={project.image}
                         alt={project.title}
+                        width={500}
+                        height={500}
                         className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">

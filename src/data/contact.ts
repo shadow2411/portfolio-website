@@ -4,9 +4,7 @@ import {
   Mail,
   Phone,
   Instagram,
-  ExternalLink,
-  Menu,
-  Star,
+
 } from "lucide-react";
 const contactInfo = [
   { icon: Github, link: "https://github.com/shadow2411", label: "GitHub" },
