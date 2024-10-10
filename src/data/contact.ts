@@ -14,7 +14,7 @@ const contactInfo = [
     label: "LinkedIn",
   },
   { icon: Mail, link: "mailto:nisarg.prof2411@gmail.com", label: "Email" },
-  { icon: Phone, link: "tel:+919903535282", label: "Call Me" },
+  { icon: Phone, link: "tel:+919909595282", label: "Call Me" },
   {
     icon: Instagram,
     link: "https://www.instagram.com/nisarg_2411/",
